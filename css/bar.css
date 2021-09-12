@@ -11,7 +11,7 @@
    margin: -75px 0 0 -75px;
    list-style: none;
    /* font-size: 200%; */
-   z-index: 9999;
+   z-index: 100;
    opacity: .5;
    transition: all ease-in-out .5s;
 }
@@ -43,7 +43,7 @@
   font-size: 1.3rem;
   color: hsl(0, 0%, 80%);
   top: 30px;
-  left: 49px;
+  left: 46px;
   position: relative;
   font-family: 'IBM Plex Sans Thai', sans-serif;
 
@@ -64,10 +64,10 @@
 }
 
 .menu-item {
-   width: 70px;
-   height: 70px;
+   width: 89px;
+   height: 89px;
    position: absolute;
-   left: 55%;
+   left: 60%;
    line-height: 5px;
    top: 50%;
    margin: -50px 0 0 -50px;
@@ -76,22 +76,70 @@
    transform: translate(0px, 0px);
    transition: transform 500ms;
    z-index: -2;
+   color: #fff;
    transition: .5s;
+}
+.menu-item>a {
+   position: relative;
+   top: 48%;
+   text-align: center;
+   cursor: pointer;
+   /* left: 10%; */
+   text-decoration: none;
+   font-size: .7rem;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+
+}
+.menu-item>a>span {
+   display: block;
+}
+.menu-item>a>span:hover {
+   color: hsl(0, 0%, 80%);
+}
+@media screen and (max-width:700px) {
+   .menu-item {
+      left: 67%;
+      top: 66%;
+      width: 70px;
+      height: 70px;
+   }
+   .menu-button {
+      left: 65%;
+      bottom: 50%;
+      width: 130px;
+      height: 130px;
+   }
+   .menu-button>span {
+      font-size: 1rem;
+      color: hsl(0, 0%, 80%);
+      top: 25px;
+      left: 45px;
+      position: relative;
+      font-family: 'IBM Plex Sans Thai', sans-serif;
+    
+    }
+    #menu {
+      left: 51%;
+      bottom: -90px; 
+    }
+    .menu-item a {
+      color: #fff;
+      position: relative;
+      top: 45%;
+      text-align: center;
+      /* left: 10%; */
+      text-decoration: none;
+      font-size: .7rem;
+   }
 }
 
 .menu-item:hover{
-opacity: 0.5;
- box-shadow: 0 5px 10px black; 
+   opacity: 0.9;
+   box-shadow: 0 5px 10px black; 
 }
 
 
-.menu-item a {
-   color: #fff;
-   position: relative;
-   top: 40%;
-   left: 25%;
-   text-decoration: none;
-}
+
 
 #menu:target>.menu-item:nth-child(6) {
    transform: rotate(60deg) translateY(-150px) rotate(300deg);
