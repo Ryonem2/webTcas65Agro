@@ -57,3 +57,26 @@ function ScrollToTarget(target)
 {
      document.getElementById(target).scrollIntoView(true);
 }
+
+window.addEventListener("scroll", (event) => {
+    // const navbar = document.querySelector('.hori-nav');
+const LinkA = document.getElementsByClassName('change');
+const ul = document.getElementsByClassName('ul-change');
+var y = window.scrollY
+// console.log(y)
+
+if(y > 1400) {
+    for(let i = 0 ; i < LinkA.length; i++) {
+
+        LinkA[i].style.color = '#fff'
+        ul[0].style.background = 'linear-gradient(90deg, rgba(0, 35, 122, 0.0) 0%, rgba(0, 35, 122, 0.35) 25%, rgba(0, 35, 122, 0.35) 75%, rgba(0, 35, 122, 0) 100%)'
+    }
+} else {
+    for(let i = 0 ; i < LinkA.length; i++) {
+        LinkA[i].style.color = '#00237a80'
+        ul[0].style.background = 'linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.35) 25%, rgba(255, 255, 255, 0.35) 75%, rgba(255, 255, 255, 0) 100%)'
+    }
+}
+
+});
+
