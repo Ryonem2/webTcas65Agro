@@ -94,6 +94,7 @@ html {
   color: #fff;
   /* rgba(0, 35, 122, 0.502) */
   transition: color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .ul-change {
@@ -213,6 +214,14 @@ html {
   max-width: 320px;
   height: auto;
 }
+.img-content-tcas {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-top: 7px;
+}
+
+
 .img-content-enroll {
   height: 100%;
   max-height: 130px;
@@ -224,6 +233,11 @@ html {
     max-height: 80px;
     width: auto;
   }
+  .img-content-tcas {
+    width: 100%;
+    max-width: 90px;
+    height: auto;
+  }
 }
 
 :root {
@@ -234,40 +248,45 @@ html {
   --light-color: #d2a9d9;
 }
 
-.selection a {
-  font-size: 2.5rem;
-  color: rgb(255, 255, 255);
+.link-a {
+  cursor: pointer;
+  width: 200px;
+  height: 250px;
+  /* background-color: hsl(0, 0, 80%); */
+  border-radius: 20px;
+  box-shadow: 2px 8px 15px -3px rgba(0,0,0,0.2);
+  color: hsl(0, 0%, 30%);
+  transition: all 0.2s ease-in-out;
+}
+.link-a:hover {
+  color: hsl(0, 0%, 60%);
+  background-color: hsl(0, 0%, 94%);
+  box-shadow: 2px 8px 15px -3px rgba(0,0,0,0.35);
+  
+}
+.link-a>p{
+  font-size: 1rem;
+  /* color: rgb(0, 0, 0); */
   text-decoration: underline;
   padding: 20px;
   text-align: center;
   font-family: "IBM Plex Sans Thai", sans-serif;
-  transition: all 0.2s ease-in-out;
+  transition: color .2s ease-in-out;
   /* background-color: #fff; */
   /* border-radius: 10%; */
-  cursor: pointer;
-}
-.selection a:hover {
-  color: hsl(0, 0%, 80%);
 }
 
-@media only screen and (max-width: 768px) {
-  .selection a {
-    font-size: 1rem;
+
+@media only screen and (max-width: 500px) {
+  .link-a {
+    height: 160px;
+  }
+  .link-a>p{
+  font-size: .75rem;
+
   }
 }
-.selection {
-  position: static;
-  left: 0;
-  z-index: 50;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  width: 100%;
-  background: #1e365b;
 
-  /* opacity: .5; */
-  /* border-radius: 50%; */
-}
 
 #first {
   display: block;
