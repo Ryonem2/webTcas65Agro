@@ -80,3 +80,33 @@ if(y > 1400) {
 
 });
 
+
+// Get the modal
+const modal = document.querySelectorAll("#myModal-img");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+const img = document.querySelectorAll("#major");
+console.log(img.length)
+// const modalImg = document.getElementById("img01");
+// const captionText = document.getElementById("caption-img");
+
+for(let a =0 ; a < img.length ; a++) {
+    img[a].addEventListener('click', () => {
+        modal[a].style.display = 'block'
+        console.log(modal[a])
+    });
+}
+
+// Get the <span> element that closes the modal
+const spanImg = document.getElementsByClassName("close-img");
+for(let a =0 ; a < img.length ; a++) {
+    spanImg[a].addEventListener('click', () => {
+        modal[a].style.display = 'none'
+        console.log(spanImg[a])
+    });
+}
+// When the user clicks on <span> (x), close the modal
+// spanImg.onclick = function() {
+//   modal.style.display = "none";
+// }
+
