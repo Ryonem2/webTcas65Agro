@@ -86,9 +86,6 @@ const modal = document.querySelectorAll("#myModal-img");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 const img = document.querySelectorAll("#major");
-// console.log(img.length)
-// const modalImg = document.getElementById("img01");
-// const captionText = document.getElementById("caption-img");
 
 for(let a =0 ; a < img.length ; a++) {
     img[a].addEventListener('click', () => {
