@@ -8,6 +8,29 @@ html {
   font-size: calc(70% + 0.86vmin);
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background-color: transparent; */
+  background: #fff; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
 .bg {
   /* The image used */
   background-image: url("/img/hero-bg-2.jpg");
