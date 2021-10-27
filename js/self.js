@@ -2,9 +2,6 @@ const a = document.getElementsByClassName('link-a');
 const section = document.getElementsByClassName('section');
 const first = document.getElementById('first');
 
-// console.log(a.length);
-// console.log(section.length);
-
 
 for(let i = 0; i < a.length;i++){
     a[i].addEventListener('click', () => {
@@ -13,10 +10,8 @@ for(let i = 0; i < a.length;i++){
             first.style.display = 'none';
         }
         section[i].style.display = 'block';
-        // console.log(i);
-        // console.log(section);
     });
-// console.log(i)
+
 }
 
 const imgCol = document.getElementsByClassName('img-col');
@@ -59,11 +54,9 @@ function ScrollToTarget(target)
 }
 
 window.addEventListener("scroll", (event) => {
-    // const navbar = document.querySelector('.hori-nav');
 const LinkA = document.getElementsByClassName('change');
 const ul = document.getElementsByClassName('ul-change');
 var y = window.scrollY
-// console.log(y)
 
 if(y > 1400) {
     for(let i = 0 ; i < LinkA.length; i++) {
@@ -80,7 +73,6 @@ if(y > 1400) {
 
 });
 
-
 // Get the modal
 const modal = document.querySelectorAll("#myModal-img");
 
@@ -90,16 +82,13 @@ const img = document.querySelectorAll("#major");
 for(let a =0 ; a < img.length ; a++) {
     img[a].addEventListener('click', () => {
         modal[a].style.display = 'block'
-        // console.log(modal[a])
     });
 }
 
-// Get the <span> element that closes the modal
 const spanImg = document.getElementsByClassName("close-img");
 for(let a =0 ; a < img.length ; a++) {
     spanImg[a].addEventListener('click', () => {
         modal[a].style.display = 'none'
-        // console.log(spanImg[a])
     });
 }
 // When the user clicks on <span> (x), close the modal
