@@ -324,9 +324,6 @@ html {
 }
 
 
-#first {
-  display: block;
-}
 .section {
   /* position: relative; */
   /* top: 0; */
@@ -410,7 +407,7 @@ html {
     height: 100vh;
     position: fixed;
 }
-.bg-modal {
+.bg-modal,.bg-modal2 {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 999; /* Sit on top */
@@ -466,7 +463,7 @@ html {
   /* .container-self{
       width: 85vh;
   } */
-.close, .close-vid {
+.close, .close-vid, .close2  {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -476,8 +473,8 @@ html {
     transition: 0.3s;
     cursor: pointer;
   }
-  .close:hover,  .close-vid:hover
-    .close:focus , .close-vid:focus{
+  .close:hover, .close2:hover , .close-vid:hover
+    .close:focus , .close2:hover , .close-vid:focus{
   color: #bbb;
   text-decoration: none;
   cursor: pointer;

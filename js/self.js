@@ -1,18 +1,18 @@
-const a = document.getElementsByClassName('link-a');
-const section = document.getElementsByClassName('section');
-const first = document.getElementById('first');
+// const a = document.getElementsByClassName('link-a');
+// const section = document.getElementsByClassName('section');
+// const first = document.getElementById('first');
 
 
-for(let i = 0; i < a.length;i++){
-    a[i].addEventListener('click', () => {
-        for(let j =0; j<4 ;j++){
-            section[j].style.display = 'none';
-            first.style.display = 'none';
-        }
-        section[i].style.display = 'block';
-    });
+// for(let i = 0; i < a.length;i++){
+//     a[i].addEventListener('click', () => {
+//         for(let j =0; j<4 ;j++){
+//             section[j].style.display = 'none';
+//             first.style.display = 'none';
+//         }
+//         section[i].style.display = 'block';
+//     });
 
-}
+// }
 
 const imgCol = document.getElementsByClassName('img-col');
 const bgModal = document.getElementsByClassName('bg-modal');
@@ -23,13 +23,31 @@ for(let i = 0 ; i < imgCol.length; i++) {
     });
 }
 
-var span = document.getElementsByClassName("close");
+var span = document.getElementsByClassName("close2");
 
 for(let i = 0 ; i < span.length; i++) {
     span[i].addEventListener('click', () => {
         bgModal[i].style.display = 'none';
     });
 }
+
+const imgCol2 = document.getElementsByClassName('img-col2');
+const bgModal2 = document.getElementsByClassName('bg-modal2');
+console.log(imgCol2)
+for(let i = 0 ; i < imgCol2.length; i++) {
+    imgCol2[i].addEventListener('click', () => {
+        bgModal2[i].style.display = 'block';
+    });
+}
+
+var span2 = document.getElementsByClassName("close");
+
+for(let i = 0 ; i < span2.length; i++) {
+    span2[i].addEventListener('click', () => {
+        bgModal2[i].style.display = 'none';
+    });
+}
+
 
 const bgModalVid = document.getElementsByClassName('bg-modal-vid');
 var span2 = document.getElementsByClassName("close-vid");
@@ -53,7 +71,7 @@ function ScrollToTarget(target)
      document.getElementById(target).scrollIntoView(true);
 }
 
-window.addEventListener("scroll", (event) => {
+window.addEventListener("scroll", () => {
 const LinkA = document.getElementsByClassName('change');
 const ul = document.getElementsByClassName('ul-change');
 var y = window.scrollY
